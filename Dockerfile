@@ -5,3 +5,5 @@ RUN set -eux; \
         apt-get update; \
         apt-get install -y --no-install-recommends rundeck-cli; \
         rm -rf /var/lib/apt/lists/*
+
+CMD ["/usr/bin/rd"]
